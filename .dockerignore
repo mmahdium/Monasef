@@ -1,0 +1,7 @@
+.env.secret
+*.db
+*.bat
+*.log
+*.pyc
+__pycache__/    
+cmd_history.txt

@@ -1,0 +1,7 @@
+Flask
+requests
+datetime
+uuid
+urllib3
+flask_compress
+python-dotenv

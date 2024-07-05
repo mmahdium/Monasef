@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fa">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>مُنَصِف - نیم بها کننده لینک دانلود</title>
+    <meta name="description" content="با نیم بها کننده لینک مُنَصِف به راحتی لینک هارو نیم بها دانلود کن." />
+	<meta name="og:title" property="og:title" content="ُنیم بها کننده لینک دانلود">
+	<meta property="og:description" content="با نیم بها کننده لینک مُنَصِف به راحتی لینک هارو نیم بها دانلود کن." />
+	<meta property="og:site_name" content="مُنَصِف" />
+    <script src="https://js.hcaptcha.com/1/api.js?hl=fa" async defer></script>
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/indigo.css') }}" id="theme-color">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+
+    <!--navigation-->
+    <section class="smart-scroll">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand heading-black display-1 text-white" href="/">
+                    مُنَصِف
+                </a>
+                <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span data-feather="grid"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#faq">قوانین</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#features">ویژگی ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#QA">سوالات متداول</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--hero header-->
+    <section class="py-7 py-md-0 bg-hero" id="home">
+        <div class="container">
+            <div class="row vh-md-100">
+                <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                    <h1 class="heading-black text-capitalize">نیم بها کننده لینک دانلود <span class="display-1 koodak"
+                            style="color: #6a80fc;">مُنَصِف</span></span>
+					</h1>
+                    <p class="display-4 py-3">همون فایل، نصف هزینه اینترنت ⁦;⁠-⁠)</p>
+                    <form action="/verifyurl" method="post">
+                        <div class="url-input">
+                            <div class="icon">
+                                <svg viewBox="0 0 18 18">
+                                    <path
+                                        d="M10.05 7.95001C11.55 9.45001 11.55 11.775 10.05 13.275L7.95 15.375C6.45 16.875 4.125 16.875 2.625 15.375C1.125 13.875 1.125 11.55 2.625 10.05L4.5 8.25001" />
+                                    <path
+                                        d="M7.9502 10.05C6.4502 8.55 6.4502 6.225 7.9502 4.725L10.0502 2.625C11.5502 1.125 13.8752 1.125 15.3752 2.625C16.8752 4.125 16.8752 6.45 15.3752 7.95L13.5002 9.75" />
+                                </svg>
+                                <div class="favicon"></div>
+                            </div>
+                            <div class="text">
+                                <input type="url" placeholder="لینک دانلود" required pattern="https?://.+" name="url" />
+                            </div>
+                        </div>
+                        <div style=" width: 304px;">
+                        </div>
+                        <button class="btn btn-primary d-inline-flex flex-row align-items-center">
+                            <em class="ml-2" data-feather="arrow-right"></em>
+                            نیم بها کن!
+                        </button>
+                    </form>
+                </div>
+            </div>
+			
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="pt-6 pb-7" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2 class="heading-black">هر فایلی رو نیم بها دانلود کن!</h2>
+                    <p class="text-muted lead koodak">با مُنَصِف هر فایل رو نیم بها دانلود کن!</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-10 mx-auto">
+                    <div class="row feature-boxes">
+                        <div class="col-md-6 box">
+                            <div class="icon-box box-primary">
+                                <div class="icon-box-inner">
+                                    <span data-feather="dollar-sign" width="35" height="35"></span>
+                                </div>
+                            </div>
+                            <h5>رایگان</h5>
+                            <p class="text-light koodak">استفاده از این سرویس مُفتی هست! یعنی نباید براش پول بدی.</p>
+                        </div>
+                        <div class="col-md-6 box">
+                            <div class="icon-box box-success">
+                                <div class="icon-box-inner">
+                                    <span data-feather="anchor" width="35" height="35"></span>
+                                </div>
+                            </div>
+                            <h5>احترام به حریم خصوصی</h5>
+                            <p class="text-light koodak">ما سرمونو توی فایلای محترم شما نمیکنیم و قرار نیست اطلاعاتی که
+                                جمع نمیکنیم رو به کسی یا جایی بدیم </p>
+                        </div>
+                        <div class="col-md-6 box">
+                            <div class="icon-box box-danger">
+                                <div class="icon-box-inner">
+                                    <span data-feather="download-cloud" width="35" height="35"></span>
+                                </div>
+                            </div>
+                            <h5>بدون محدودیت حجم</h5>
+                            <p class="text-light koodak">مهم نیست چقدر بزرگه، ما باهاش مشکلی نداریم!</p>
+                        </div>
+                        <div class="col-md-6 box">
+                            <div class="icon-box box-info">
+                                <div class="icon-box-inner">
+                                    <span data-feather="fast-forward" width="35" height="35"></span>
+                                </div>
+                            </div>
+                            <h5>بدون محدودیت سرعت</h5>
+                            <p class="text-light koodak">هیچ محدودیتی ما روی سرعت دانلود فایل نداریم، نداشتیم و نخواهیم
+                                داشت، اون سرعت اینترنت شما هست که ممکنه کارو خراب کنه ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--faq section-->
+    <section class="py-7" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2>قوانین</h2>
+                    <p class="text-muted lead koodak">اینجا یسری قانون هست که گاهاً حکم مرگ و زندگی برای لینک شما رو
+                        داره</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <h5>لینک شما باید تابع قوانین کشورمون باشه در غیر این صورت حذف و به مراجع ذیصلاح اطلاع داده
+                                میشه.</h5>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <h5>ما هیچ مسئولیتی نسبت به لینک های شما نداریم، همون چیزی که به ما میدی رو برات نیم بها
+                                میکنیم.</h5>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <h5>اگه یه لینک نیم بها رو وارد بکنید طبیعتاً یک چهارم بها نمیشه، نه؟</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-7" id="QA">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2>سوالات متداول</h2>
+                    <p class="text-muted lead">سوال داری؟ شاید اینجا جوابش باشه</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <h5>لینک های دانلود دائمی هستند؟</h5>
+                            <p class="text-light koodak">نشد دیگه، لینک هایی که وارد میکنید بعد از 3 روز از زمان
+                                ایجادشون در سیستم به سوی حق میشتابند.</p>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <h5>آیا امکان دارد که دانلود را برای مدت کوتاهی متوقف کنم؟</h5>
+                            <p class="text-light koodak">متاسفانه این امکان هم مجود نداره، چون خیلی از لینک هایی که وارد
+                                میشه قابلیت توقف دانلود رو ندارن پس سیستم ما هم مجبوره همه لینک هارو اینکاری کنه تا
+                                خدایی نکرده مشکلی پیش نیاد.</p>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <h5>چرا دانلود من نیم بها محاسبه نشده؟</h5>
+                            <p class="text-light koodak">این دیگه مشکل ما نیست، در صورتی که شرکت خدمات دهنده اینترنت‌تان
+                                پایبند قوانین نیست؛ شکایت خود را در سامانه <a href="https://195.cra.ir/" rel="nofollow"><span
+                                        style="direction: ltr; display: inline-block; font-family: FArial;">195.cra.ir</span></a>
+                                ثبت کنید.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="py-6">
+        <div class="container">
+
+            <div class="row mt-5">
+                <div class="col-12 text-muted text-center small-xl" style="display: block; font-family: FArial;">
+                    &copy; 2024 Monasef - All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--scroll to top-->
+    <div class="scroll-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>

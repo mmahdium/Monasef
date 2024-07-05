@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نیم بها کننده لینک دانلود</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/plugins-min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style-min.css')}}">
+
+</head>
+
+<body>
+  <div class="content-wrapper">
+
+
+    <section class="wrapper bg-dark" id="faq">
+      <div class="container">
+        <div class="row">
+
+          <!--/column -->
+          <div class="  text-center " data-cues="zoomIn">
+
+            <div class="card shadow-lg mb-4 mx-4 mt-max-lg-4" data-cue="zoomIn" data-show="true"
+              style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+              <div class="px-4 py-2">
+
+
+                <h2 class="display-4 text-center pt-4 px-2">{{file_name}}</h2>
+                <hr class="my-4">
+                <p class="card-text pb-4">این وبسایت هیچ مسئولیتی در قبال فایل ها ندارد.</p>
+                </h4>
+              </div>
+            </div>
+            <div class="row mx-1 mt-max-lg-4 mb-4" data-cue="zoomIn" data-show="true"
+              style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+              <div class="col-lg-4 mb-max-lg-4">
+                <div class="card shadow-lg">
+                  <div class="px-3 py-3">
+                    <div class="d-flex d-lg-block d-xl-flex flex-row">
+                      <div>
+                        <div class="icon btn btn-circle btn-lg btn-soft-purple pe-none"> <i class="uil uil-server"></i>
+                        </div>
+                      </div>
+                      <div class="pe-2">
+                        <h3 class="counter mb-1" style="visibility: visible;">حجم فایل</h3>
+                        <p class="mb-0">{{filesize}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-max-lg-4">
+                <div class="card shadow-lg">
+                  <div class="px-3 py-3">
+                    <div class="d-flex d-lg-block d-xl-flex flex-row">
+                      <div>
+                        <div class="icon btn btn-circle btn-lg btn-soft-aqua pe-none"> <i
+                            class="uil uil-arrow-to-bottom"></i> </div>
+                      </div>
+                      <div class="pe-2">
+                        <h3 class="counter mb-1" style="visibility: visible;">فرمت فایل</h3>
+                        <h5 class="mb-0">{{file_ext}}</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-max-lg-4">
+                <div class="card shadow-lg">
+                  <div class="px-3 py-3">
+                    <div class="d-flex d-lg-block d-xl-flex flex-row">
+                      <div>
+                        <div class="icon btn btn-circle btn-lg btn-soft-yellow pe-none"> <i
+                            class="uil uil-calender"></i> </div>
+                      </div>
+                      <div class="pe-2">
+                        <h3 class="counter mb-1" style="visibility: visible;">معتبر تا</h3>
+                        <p class="mb-0">{{days_to_expire}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <button class="koodak rtl download-btn" data-cue="zoomIn" data-show="true" id="dlbtn"
+              style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+              دانلود نیم بها
+            </button>
+
+
+
+          </div>
+        </div>
+        
+      </div>
+      <!--/column -->
+
+  </div>
+  <!--/column -->
+  </div>
+  <!--/.row -->
+  </div>
+  <!-- /.container -->
+  </section>
+  <!-- /section -->
+  </div>
+
+  <script defer src="{{url_for('static', filename='js/theme.js')}}"></script>
+
+</body>
+
+</html>
