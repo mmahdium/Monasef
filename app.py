@@ -59,34 +59,26 @@ def checkdb():
     
 
 
-
 def check_url(url):
-    # Check if the URL is a direct download link
     try:
+        # Follow redirects in one step
         response = requests.head(url, allow_redirects=True)
+        content_type = response.headers.get("Content-Type", "").lower()
 
-        content_type = response.headers["Content-Type"]
+        if response.status_code in [301, 302]:
+            print(f"URL is a redirect: {url}")
 
-        if "text/html" in content_type.lower():
-            print("URL is a web page:", url)
+        if "text/html" in content_type:
+            print(f"URL is a web page: {response.url}")
             return False
-        elif response.status_code in [301, 302]:
-            print("URL is a redirect:", url)
-            new_url = response.headers["Location"]
-            # Follow the redirect and check again
-            response = requests.head(new_url)
-            content_type = response.headers["Content-Type"]
-            if "text/html" in content_type.lower():
-                print("Redirected URL is also a web page:", new_url)
-                return False
-            else:
-                print("Reached file:", new_url)
-                return True
-        else:
-            print("Reached file:", url)
-            return True
-    except:
+
+        print(f"Reached file: {response.url}")
+        return True
+
+    except requests.RequestException as e:
+        print(f"Error occurred: {e}")
         return False
+
 
 
 def save_url_info(url):
