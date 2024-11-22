@@ -31,8 +31,8 @@ app.static_folder = "static"
 logger404 = logging.getLogger('logger404')
 logger500 = logging.getLogger('logger500')
 
-handler1 = logging.FileHandler('404.log', 'w', 'utf-8')
-handler2 = logging.FileHandler('500.log', 'w', 'utf-8')
+handler1 = logging.FileHandler('./logs/404.log', 'w', 'utf-8')
+handler2 = logging.FileHandler('./logs/500.log', 'w', 'utf-8')
 
 handler1.setLevel(logging.ERROR)
 handler2.setLevel(logging.ERROR)
